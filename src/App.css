@@ -1,0 +1,104 @@
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.SideBar {
+  background-color: rgb(248, 248, 247);
+  width: 250px;
+}
+
+.SideBarHeader {
+  color: #91918e;
+  font-size: 12px;
+  padding: 10px 0 0 24px;
+  font-weight: 600;
+}
+
+.SideBarFooter {
+  border-top: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.SideBarFooter__add-button {
+  width: 100%;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5f5b5e;
+  text-align: left;
+  padding: 14px 24px;
+  font-weight: 300;
+}
+
+.MemoContainer {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 120px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.MemoContainer__title {
+  font-size: 1.8rem;
+  color: #333;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.MemoContainer__content {
+  font-size: 1rem;
+  color: #666;
+  width: 100%;
+  min-height: 600px;
+  border: none;
+  outline: none;
+}
+
+.MemoList {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.MemoItem {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #5f5b5e;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.MemoItem:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.MemoItem:hover .MemoItem__delete-button {
+  display: block;
+}
+
+.MemoItem.selected {
+  background-color: rgba(0, 0, 0, 0.03);
+  font-weight: 600;
+}
+
+.MemoItem.selected .MemoItem__delete-button {
+  text-decoration: none !important;
+  text-decoration: initial;
+}
+
+.MemoItem__delete-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
